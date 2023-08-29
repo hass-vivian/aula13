@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>:: Aula 13 ♥ ::</title>
+       <!-- <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"> -->
+       <link rel="shortcut icon" href="Imagens/Ph03nyx-Super-Mario-Paper-Mario.256.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="Imagens/logo.png" alt="" class="header_logo">
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header_nav">
+        <ul>
+            <li>
+                <a href="https://pt.wikipedia.org/wiki/Super_Mario_Bros." target="_blank">História</a>
+            </li>
+            <li>
+                <a href="https://www.nintendo.pt/Jogos/Portal-Nintendo/Portal-Super-Mario/Portal-Super-Mario-627604.html" target="_blank">Original</a>
+            </li>
+            <li>
+                <a href="https://www.nintendo.pt/Jogos/Portal-Nintendo/Portal-Super-Mario/Portal-Super-Mario-627604.html" target="_blank">Jogos</a>
+            </li>
+            <li>
+                <a href="#" target="_blank">Saiba mais</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+        <section class=" trailer fundo_main">
+            <div class="maxWidth">
+                <h2 class="trailer_titulo fonte">O Filme</h2>
+                    <p class="trailer_paragrafo">Você não pode perder esta aventura!</p>
+                <!-- </div> -->
+                <div class="trailer_video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="SUPER MARIO BROS - O FILME | Trailer Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="tamanho1"></iframe>
+                </div>
+                <a href="https://www.youtube.com/embed/Cb4WV4aXBpk" target="_blank" class="trailer_botao">Trailer oficial</a>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logos_footer">
+            <div>
+                <a href="#" Alt="facebook" target="_blank" >
+                    <img src="Imagens/facebook_6422199.png" alt="<a href="https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon class="tamanho"></a>
+                </a>
+            </div>
+            <div>
+                <a href="#" Alt="instagram" target="_blank">
+                    <img src="Imagens/instagram_6422200.png" alt="<a href="https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon class="tamanho"></a>
+                </a>
+            </div>
+            <div>
+                <a href="#" Alt="linkeding" target="_blank"><img src="Imagens/linkedin_6422202.png" alt="<a href="https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=linkedin&query=linkedin&type=icon class="tamanho"></a>
+            </a>
+            </div>
+            <div>
+                <a href="#" target="_blank" Alt="Youtube">
+                    <img src="Imagens/youtube_6422215.png" alt="<a href="https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon" class="tamanho"></a>
+                </a>
+            </div>
+        </div>
+        <p class="texto_footer">
+            Vívian Hass - Elas na Tech 2023 ♥
+        </p>            
+    </footer>
+
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block') {
+                itens_menu.classList.remove('show');
+            } else {
+                itens_menu.classList.toggle('show');
+            }
+        }
+    </script>
+ 
+</body>
+</html>
